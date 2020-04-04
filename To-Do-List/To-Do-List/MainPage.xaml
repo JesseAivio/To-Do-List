@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="To_Do_List.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <StackLayout VerticalOptions="Start" Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+            <Button x:Name="btnClearComletedTasks" Clicked="btnClearComletedTasks_Clicked" Text="Clear completed tasks"></Button>
+            <Button x:Name="btnNewTask" Clicked="btnNewTask_Clicked" Text="+"></Button>
+        </StackLayout>
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <ListView x:Name="tasksList" ItemSelected="tasksList_ItemSelected"></ListView>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
